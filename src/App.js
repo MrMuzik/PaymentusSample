@@ -4,6 +4,9 @@ import CSSTransitionGroup from "react-addons-css-transition-group";
 import Menu from "./components/menu";
 import EmptyComponent from "./components/empty";
 import "./App.css";
+import ghToPages from "gh-to-pages";
+
+ghToPages("https://github.com/MrMuzik/PaymentusSample");
 
 class App extends Component {
   constructor() {
@@ -86,7 +89,10 @@ class App extends Component {
           </CSSTransitionGroup>
           <div className="primary">
             {/* Variable content */}
-            <EmptyComponent content={this.state.content} page={this.state.page} />
+            <EmptyComponent
+              content={this.state.content}
+              page={this.state.page}
+            />
           </div>
         </div>
       </div>

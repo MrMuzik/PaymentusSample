@@ -13,3 +13,6 @@ Form toggle switches were imported from React Toggle.
 (http://aaronshaf.github.io/react-toggle/)
 
 All other code was hand-crafted.
+
+Below is a screenshot of how it appears on my screen.
+![alt text](/public/screenshot.png "screenshot of page")

@@ -28,6 +28,7 @@ class Profile extends React.Component {
     return (
       <div className="page-content">
         <div className="page-navigation">{this.renderLinks()}</div>
+        <form>
         <div className="page-module">
           <div className="module-header">Communication Preferences</div>
           <div className="section-header">Account Notifications</div>
@@ -328,22 +329,38 @@ class Profile extends React.Component {
               <span>
                 <FaEnvelopeO className="icon" /> Email
               </span>
-            </div>
-            <div className="timezone-contact-method">
-              <span>
-                <FaMobile className="icon" /> Text
-              </span>
-              <span>
+              <span className="timeFrom">
                 from:{" "}
-                <select name="trending">
+                <select name="from">
                   <option value="8" selected>8:00 AM</option>
                   <option value="9">9:00 AM</option>
                   <option value="10">10:00 AM</option>
                 </select>
               </span>
-              <span>
+              <span className="timeUntil">
                 until:{" "}
-                <select name="trending">
+                <select name="until">
+                  <option value="630" selected>6:30 PM</option>
+                  <option value="730">7:30 PM</option>
+                  <option value="830">8:30 PM</option>
+                </select>
+              </span>
+            </div>
+            <div className="timezone-contact-method">
+              <span>
+                <FaMobile className="icon" /> Text
+              </span>
+              <span className="timeFrom">
+                from:{" "}
+                <select name="from">
+                  <option value="8" selected>8:00 AM</option>
+                  <option value="9">9:00 AM</option>
+                  <option value="10">10:00 AM</option>
+                </select>
+              </span>
+              <span className="timeUntil">
+                until:{" "}
+                <select name="until">
                   <option value="630" selected>6:30 PM</option>
                   <option value="730">7:30 PM</option>
                   <option value="830">8:30 PM</option>
@@ -354,8 +371,28 @@ class Profile extends React.Component {
               <span>
                 <FaVolumeControlPhone className="icon" /> Phone
               </span>
+              <span className="timeFrom">
+                from:{" "}
+                <select name="from">
+                  <option value="8" selected>8:00 AM</option>
+                  <option value="9">9:00 AM</option>
+                  <option value="10">10:00 AM</option>
+                </select>
+              </span>
+              <span className="timeUntil">
+                until:{" "}
+                <select name="until">
+                  <option value="630" selected>6:30 PM</option>
+                  <option value="730">7:30 PM</option>
+                  <option value="830">8:30 PM</option>
+                </select>
+              </span>
             </div>
           </div>
+        </div>
+        </form>
+        <div className="module-footer">
+          <button type="submit" className="btn-primary">Save Changes</button>
         </div>
       </div>
     );

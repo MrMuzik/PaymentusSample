@@ -2,7 +2,7 @@ import React from "react";
 
 class Payment extends React.Component {
   render() {
-    return <p>This is the payment page.</p>;
+    return <div className="page-content"><p>This is the payments page.</p></div>;
   }
 }
 

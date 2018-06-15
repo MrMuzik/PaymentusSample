@@ -1,10 +1,12 @@
 @import url(css/toggle.css);
+html, body {
+  height: 100%; }
+
 html,
 body,
 #root,
 .App,
 .main {
-  height: 100%;
   margin: 0;
   padding: 0; }
 
@@ -115,7 +117,8 @@ body,
           min-width: 10000px; }
 
 .page {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 50px; }
   .page .page-header {
     width: 100%;
     background: #1d579a;
@@ -143,6 +146,19 @@ body,
         .page .page-navigation ul li:hover, .page .page-navigation ul li.active {
           border-bottom: 3px solid #6cb58c;
           cursor: pointer; }
+  .page .module-footer {
+    position: relative;
+    width: 600px; }
+    .page .module-footer .btn-primary {
+      float: right;
+      background: #1d579a;
+      color: #fff;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 3px;
+      margin-top: 20px; }
+      .page .module-footer .btn-primary:hover {
+        cursor: pointer; }
   .page .page-module {
     width: 600px;
     border: 1px solid #e9e9e9;
@@ -178,9 +194,23 @@ body,
         .page .page-module .module-section .timezone select {
           width: 85%; }
       .page .page-module .module-section .timezone-contact-method {
+        position: relative;
         color: #555;
         font-size: 1.1em;
         padding: 10px 0; }
+        .page .page-module .module-section .timezone-contact-method .icon {
+          vertical-align: middle;
+          margin-top: -5px;
+          font-size: 1.2em; }
+        .page .page-module .module-section .timezone-contact-method .timeFrom select, .page .page-module .module-section .timezone-contact-method .timeUntil select {
+          height: 30px;
+          width: 90px; }
+        .page .page-module .module-section .timezone-contact-method .timeFrom {
+          position: absolute;
+          right: 200px; }
+        .page .page-module .module-section .timezone-contact-method .timeUntil {
+          position: absolute;
+          right: 0; }
       .page .page-module .module-section .react-toggle {
         position: absolute;
         right: 48%;

@@ -5,12 +5,14 @@ $paymentusGreen: #6cb58c;
 // Imports
 @import 'css/toggle.css';
 // Styles
+html, body {
+    height:100%;
+}
 html,
 body,
 #root,
 .App,
 .main {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -151,6 +153,7 @@ body,
 
 .page {
     width: 100%;
+    margin-bottom: 50px;
     .page-header {
         width: 100%;
         background: $paymentusBlue;
@@ -183,6 +186,22 @@ body,
                     border-bottom: 3px solid $paymentusGreen;
                     cursor: pointer;
                 }
+            }
+        }
+    }
+    .module-footer {
+        position: relative;
+        width: 600px;
+        .btn-primary {
+            float: right;
+            background: $paymentusBlue;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 3px;
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
             }
         }
     }
@@ -229,9 +248,29 @@ body,
                 }
             }
             .timezone-contact-method {
+                position: relative;
                 color: #555;
                 font-size: 1.1em;
                 padding: 10px 0;
+                .icon {
+                    vertical-align: middle;
+                    margin-top: -5px;
+                    font-size: 1.2em;
+                }
+                .timeFrom, .timeUntil {
+                    select {
+                        height: 30px;
+                        width: 90px;
+                    }
+                }
+                .timeFrom {
+                    position: absolute;
+                    right: 200px;
+                }
+                .timeUntil {
+                    position: absolute;
+                    right: 0;
+                }
             }
             .react-toggle {
                 position: absolute;

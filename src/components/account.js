@@ -2,7 +2,7 @@ import React from "react";
 
 class Account extends React.Component {
   render() {
-    return <p>This is the Account page.</p>;
+    return <div className="page-content"><p>This is the Accounts page.</p></div>;
   }
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 class Solution extends React.Component {
   render() {
-    return <p>This is the Solution page.</p>;
+    return <div className="page-content"><p>This is the Solution page.</p></div>;
   }
 }
 

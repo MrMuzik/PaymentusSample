@@ -21,7 +21,7 @@ class EmptyComponent extends React.Component {
     return (
         <div className="page">
             <div className="page-header">
-                <h2>{pageTitle}</h2>
+                <h2>{pageTitle}{pageTitle === "Profile & Preferences" ? " > Communication Preferences" : ""}</h2>
             </div>
             <MyComponent />
         </div>

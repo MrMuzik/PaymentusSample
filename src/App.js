@@ -4,9 +4,6 @@ import CSSTransitionGroup from "react-addons-css-transition-group";
 import Menu from "./components/menu";
 import EmptyComponent from "./components/empty";
 import "./App.css";
-import ghToPages from "gh-to-pages";
-
-ghToPages("https://github.com/MrMuzik/PaymentusSample");
 
 class App extends Component {
   constructor() {
